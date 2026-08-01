@@ -5,7 +5,7 @@ class Ansa < Formula
   # `sha256` to the source tarball's checksum — `brew fetch ansa` prints it,
   # or run `shasum -a 256` on the downloaded tarball.
   url "https://github.com/interpretica-io/ansa/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "0ee80dbf61ed6eab51b967b58d0a8e1b881325bca27db719610aa04f81c00f29"
   license "MIT"
   head "https://github.com/interpretica-io/ansa.git", branch: "main"
 
