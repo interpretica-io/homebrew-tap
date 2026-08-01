@@ -4,8 +4,8 @@ class Ansa < Formula
   # Stable release. After tagging `vX.Y.Z`, point `url` at that tag and set
   # `sha256` to the source tarball's checksum — `brew fetch ansa` prints it,
   # or run `shasum -a 256` on the downloaded tarball.
-  url "https://github.com/interpretica-io/ansa/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0ee80dbf61ed6eab51b967b58d0a8e1b881325bca27db719610aa04f81c00f29"
+  url "https://github.com/interpretica-io/ansa/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "495ec0ffd9628e6ba5dcd5f3bb0eda55a1dbd489e10c363759fc4d1936d78631"
   license "MIT"
   head "https://github.com/interpretica-io/ansa.git", branch: "main"
 
@@ -13,6 +13,14 @@ class Ansa < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+  end
+
+  def caveats
+    <<~EOS
+      To teach an assistant how to use the bus:
+        ansa install-skill claude    # Claude Code skill -> ~/.claude/skills
+        ansa install-skill chatgpt   # Custom GPT files + setup steps
+    EOS
   end
 
   test do
