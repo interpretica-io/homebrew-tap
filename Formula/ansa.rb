@@ -4,7 +4,7 @@ class Ansa < Formula
   # Stable release. After tagging `vX.Y.Z`, point `url` at that tag and set
   # `sha256` to the source tarball's checksum — `brew fetch ansa` prints it,
   # or run `shasum -a 256` on the downloaded tarball.
-  url "https://github.com/interpretica-io/ansa/archive/refs/tags/v0.1.0.tar.gz"
+  url "https://github.com/interpretica-io/ansa/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   license "MIT"
   head "https://github.com/interpretica-io/ansa.git", branch: "main"
